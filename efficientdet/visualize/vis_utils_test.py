@@ -21,8 +21,8 @@ import six
 from six.moves import range
 import tensorflow.compat.v1 as tf
 
-from visualize import standard_fields as fields
-from visualize import vis_utils
+from efficientdet.visualize import standard_fields as fields
+from efficientdet.visualize import vis_utils
 
 _TESTDATA_PATH = 'testdata'
 

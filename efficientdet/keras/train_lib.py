@@ -24,15 +24,15 @@ import tensorflow as tf
 from tensorflow_addons.callbacks import AverageModelCheckpoint
 import tensorflow_hub as hub
 
-import coco_metric
+import efficientdet.coco_metric as coco_metric
 import inference
 import iou_utils
-import utils
-from keras import anchors
-from keras import efficientdet_keras
-from keras import label_util
-from keras import postprocess
-from keras import util_keras
+import efficientdet.utils as utils
+from efficientdet.keras import anchors
+from efficientdet.keras import efficientdet_keras
+from efficientdet.keras import label_util
+from efficientdet.keras import postprocess
+from efficientdet.keras import util_keras
 from tensorflow_model_optimization.python.core.sparsity.keras import pruning_wrapper
 
 

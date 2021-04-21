@@ -29,7 +29,7 @@ import six
 from six.moves import xrange
 import tensorflow as tf
 
-import utils
+import efficientdet.utils as utils
 
 GlobalParams = collections.namedtuple('GlobalParams', [
     'batch_norm_momentum', 'batch_norm_epsilon', 'dropout_rate', 'data_format',

@@ -25,9 +25,9 @@ import numpy as np
 from PIL import Image
 import tensorflow.compat.v1 as tf
 
-import hparams_config
+import efficientdet.hparams_config as hparams_config
 import inference
-import utils
+import efficientdet.utils as utils
 from tensorflow.python.client import timeline  # pylint: disable=g-direct-tensorflow-import
 
 flags.DEFINE_string('model_name', 'efficientdet-d0', 'Model.')

@@ -17,7 +17,7 @@ import os
 from absl import logging
 import tensorflow.compat.v1 as tf
 
-import utils
+import efficientdet.utils as utils
 
 
 class UtilsTest(tf.test.TestCase):

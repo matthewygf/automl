@@ -16,12 +16,12 @@
 
 import tensorflow as tf
 
-import dataloader
-import hparams_config
+from efficientdet import dataloader
+import efficientdet.hparams_config as hparams_config
 import test_util
 
-from keras import anchors
-from object_detection import tf_example_decoder
+from efficientdet.keras import anchors
+from efficientdet.object_detection import tf_example_decoder
 
 
 class DataloaderTest(tf.test.TestCase):

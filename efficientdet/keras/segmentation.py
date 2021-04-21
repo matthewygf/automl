@@ -18,8 +18,8 @@ from absl import logging
 import tensorflow as tf
 import tensorflow_datasets as tfds
 
-import hparams_config
-from keras import efficientdet_keras
+import efficientdet.hparams_config as hparams_config
+from efficientdet.keras import efficientdet_keras
 
 
 def create_mask(pred_mask):

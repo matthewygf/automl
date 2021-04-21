@@ -19,7 +19,7 @@ from absl import logging
 import tensorflow.compat.v1 as tf
 import yaml
 
-import hparams_config
+import efficientdet.hparams_config as hparams_config
 
 
 class HparamsConfigTest(tf.test.TestCase):

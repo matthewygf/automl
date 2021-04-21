@@ -15,7 +15,7 @@
 """A few predefined label id mapping."""
 import tensorflow as tf
 import yaml
-import hparams_config
+import efficientdet.hparams_config as hparams_config
 
 coco = {
     # 0: 'background',

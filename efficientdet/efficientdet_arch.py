@@ -25,11 +25,11 @@ from absl import logging
 import numpy as np
 import tensorflow.compat.v1 as tf
 
-import hparams_config
-import utils
-from backbone import backbone_factory
-from backbone import efficientnet_builder
-from keras import fpn_configs
+import efficientdet.hparams_config as hparams_config
+import efficientdet.utils as utils
+from efficientdet.backbone import backbone_factory
+from efficientdet.backbone import efficientnet_builder
+from efficientdet.keras import fpn_configs
 
 
 ################################################################################
@@ -365,7 +365,7 @@ def build_feature_network(features, config):
     raise ValueError('features.keys ({}) should include min_level ({})'.format(
         features.keys(), config.min_level))
 
-  # Build additional input features that are not from backbone.
+  # Build additional input features that are not from efficientdet.backbone.
   for level in range(config.min_level, config.max_level + 1):
     if level in features.keys():
       feats.append(features[level])

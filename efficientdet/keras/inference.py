@@ -21,13 +21,13 @@ from absl import logging
 import numpy as np
 import tensorflow as tf
 
-import dataloader
-import hparams_config
-import utils
-from keras import efficientdet_keras
-from keras import label_util
-from keras import util_keras
-from visualize import vis_utils
+from efficientdet import dataloader
+import efficientdet.hparams_config as hparams_config
+import efficientdet.utils as utils
+from efficientdet.keras import efficientdet_keras
+from efficientdet.keras import label_util
+from efficientdet.keras import util_keras
+from efficientdet.visualize import vis_utils
 
 
 def visualize_image(image,

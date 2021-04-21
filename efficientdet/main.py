@@ -58,10 +58,10 @@ def get_variable_by_name(var_name):
 custom_gradient.get_variable_by_name = get_variable_by_name
 import tensorflow.compat.v1 as tf
 tf.disable_eager_execution()
-import dataloader
+from efficientdet import dataloader
 import det_model_fn
-import hparams_config
-import utils
+import efficientdet.hparams_config as hparams_config
+import efficientdet.utils as utils
 
 flags.DEFINE_string(
     'tpu',

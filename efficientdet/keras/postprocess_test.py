@@ -16,7 +16,7 @@
 from absl import logging
 import tensorflow as tf
 
-from keras import postprocess
+from efficientdet.keras import postprocess
 
 
 class PostprocessTest(tf.test.TestCase):

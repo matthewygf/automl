@@ -24,7 +24,7 @@ from PIL import Image
 import tensorflow.compat.v1 as tf
 
 import model_inspect
-import utils
+import efficientdet.utils as utils
 FLAGS = flags.FLAGS
 
 

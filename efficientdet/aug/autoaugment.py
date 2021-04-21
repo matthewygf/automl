@@ -23,7 +23,7 @@ from absl import logging
 import tensorflow.compat.v1 as tf
 from tensorflow_addons import image as image_ops
 
-import hparams_config
+import efficientdet.hparams_config as hparams_config
 
 # This signifies the max integer that the controller RNN could predict for the
 # augmentation scheme.

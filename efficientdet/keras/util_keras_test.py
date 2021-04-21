@@ -16,8 +16,8 @@ from absl import logging
 from absl.testing import parameterized
 import tensorflow as tf
 
-import utils
-from keras import util_keras
+import efficientdet.utils as utils
+from efficientdet.keras import util_keras
 
 
 class KerasUtilTest(tf.test.TestCase, parameterized.TestCase):

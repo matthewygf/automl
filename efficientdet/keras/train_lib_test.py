@@ -18,8 +18,8 @@ from absl import logging
 import tensorflow as tf
 
 import det_model_fn as legacy_fn
-import hparams_config
-from keras import train_lib
+import efficientdet.hparams_config as hparams_config
+from efficientdet.keras import train_lib
 
 
 class TrainLibTest(tf.test.TestCase):

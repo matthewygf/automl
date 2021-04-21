@@ -18,15 +18,15 @@ from absl import logging
 import numpy as np
 import tensorflow as tf
 
-import dataloader
-import hparams_config
-import utils
-from backbone import backbone_factory
-from backbone import efficientnet_builder
-from keras import fpn_configs
-from keras import postprocess
-from keras import tfmot
-from keras import util_keras
+from efficientdet import dataloader
+import efficientdet.hparams_config as hparams_config
+import efficientdet.utils as utils
+from efficientdet.backbone import backbone_factory
+from efficientdet.backbone import efficientnet_builder
+from efficientdet.keras import fpn_configs
+from efficientdet.keras import postprocess
+from efficientdet.keras import tfmot
+from efficientdet.keras import util_keras
 
 
 def add_n(nodes):
@@ -897,7 +897,7 @@ class EfficientDetNet(tf.keras.Model):
     all_feats = self.backbone(inputs, training=training, features_only=True)
     feats = all_feats[config.min_level:config.max_level + 1]
 
-    # Build additional input features that are not from backbone.
+    # Build additional input features that are not from efficientdet.backbone.
     for resample_layer in self.resample_layers:
       feats.append(resample_layer(feats[-1], training, None))
 

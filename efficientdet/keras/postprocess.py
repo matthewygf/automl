@@ -19,9 +19,9 @@ from typing import List, Tuple
 from absl import logging
 import tensorflow as tf
 
-import nms_np
-import utils
-from keras import anchors
+import efficientdet.nms_np as nms_np
+import efficientdet.utils as utils
+from efficientdet.keras import anchors
 T = tf.Tensor  # a shortcut for typing check.
 CLASS_OFFSET = 1
 # TFLite-specific constants.

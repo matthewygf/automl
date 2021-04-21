@@ -19,14 +19,14 @@ from absl import logging
 import numpy as np
 import tensorflow as tf
 
-import coco_metric
-import dataloader
-import hparams_config
-import utils
+import efficientdet.coco_metric as coco_metric
+from efficientdet import dataloader
+import efficientdet.hparams_config as hparams_config
+import efficientdet.utils as utils
 
-from keras import anchors
-from keras import label_util
-from keras import postprocess
+from efficientdet.keras import anchors
+from efficientdet.keras import label_util
+from efficientdet.keras import postprocess
 
 FLAGS = flags.FLAGS
 

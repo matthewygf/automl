@@ -21,9 +21,9 @@ import numpy as np
 from PIL import Image
 import tensorflow as tf
 
-import hparams_config
-from keras import inference
-from keras import efficientdet_keras
+import efficientdet.hparams_config as hparams_config
+from efficientdet.keras import inference
+from efficientdet.keras import efficientdet_keras
 
 flags.DEFINE_string('image_path', None, 'Location of test image.')
 flags.DEFINE_string('output_dir', None, 'Directory of annotated output images.')

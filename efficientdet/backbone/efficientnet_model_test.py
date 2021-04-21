@@ -16,8 +16,8 @@
 from absl import logging
 import tensorflow.compat.v1 as tf
 
-import utils
-from backbone import efficientnet_model
+import efficientdet.utils as utils
+from efficientdet.backbone import efficientnet_model
 
 
 class ModelTest(tf.test.TestCase):
